@@ -13,7 +13,7 @@ namespace VocabLearningService.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201711301506138_Teacher"; }
+            get { return "201711301522045_Teacher"; }
         }
         
         string IMigrationMetadata.Source

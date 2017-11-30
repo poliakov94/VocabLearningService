@@ -12,17 +12,17 @@ namespace VocabLearningService.DataObjects
 	{
 		public string Name { get; set; }
 		public int GroupSize { get; set; }
-		//public virtual ICollection<User> Students { get; set; }
+		public virtual ICollection<User> Students { get; set; }
 		public virtual ICollection<Assignment> Assignments { get; set; }
 
 		[ForeignKey("Teacher_Id")]
 		public User Teacher { get; set; }
 		public string Teacher_Id { get; set; }
 
-		//public StudentGroup()
-		//{
-		//	Students = new List<User>();
-		//	Assignments = new List<Assignment>();
-		//}
+		public StudentGroup()
+		{
+			Students = new List<User>();
+			Assignments = new List<Assignment>();
+		}
 	}
 }

@@ -172,9 +172,17 @@
     <Compile Include="Migrations\201711301500047_TeacherGroup.Designer.cs">
       <DependentUpon>201711301500047_TeacherGroup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201711301506138_Teacher.cs" />
-    <Compile Include="Migrations\201711301506138_Teacher.Designer.cs">
-      <DependentUpon>201711301506138_Teacher.cs</DependentUpon>
+    <Compile Include="Migrations\201711301522045_Teacher.cs" />
+    <Compile Include="Migrations\201711301522045_Teacher.Designer.cs">
+      <DependentUpon>201711301522045_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711301522574_StudentsInGroup.cs" />
+    <Compile Include="Migrations\201711301522574_StudentsInGroup.Designer.cs">
+      <DependentUpon>201711301522574_StudentsInGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711301551351_TeacherOfGroup.cs" />
+    <Compile Include="Migrations\201711301551351_TeacherOfGroup.Designer.cs">
+      <DependentUpon>201711301551351_TeacherOfGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\VocabLearningContext.cs" />
@@ -203,8 +211,14 @@
     <EmbeddedResource Include="Migrations\201711301500047_TeacherGroup.resx">
       <DependentUpon>201711301500047_TeacherGroup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711301506138_Teacher.resx">
-      <DependentUpon>201711301506138_Teacher.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201711301522045_Teacher.resx">
+      <DependentUpon>201711301522045_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711301522574_StudentsInGroup.resx">
+      <DependentUpon>201711301522574_StudentsInGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711301551351_TeacherOfGroup.resx">
+      <DependentUpon>201711301551351_TeacherOfGroup.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

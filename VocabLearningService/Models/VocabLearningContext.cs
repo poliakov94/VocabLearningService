@@ -20,14 +20,19 @@ namespace VocabLearningService.Models
 
         public VocabLearningContext() : base(connectionStringName)
         {
-        } 		
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Conventions.Add(
-                new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
-                    "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
+
+		protected override void OnModelCreating(DbModelBuilder modelBuilder)
+		{
+			modelBuilder.Conventions.Add(
+				new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
+					"ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
+
+			modelBuilder.Entity<StudentGroup>()
+				.HasRequired(x => x.Teacher)
+				.WithMany(x => x.StudentGroups)
+				.HasForeignKey(x => x.Teacher_Id);
+		}
 
 		public System.Data.Entity.DbSet<VocabLearningService.DataObjects.Assignment> Assignments { get; set; }
 

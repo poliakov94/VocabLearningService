@@ -15,9 +15,9 @@ namespace VocabLearningService.DataObjects
 		public string AzureId { get; set; }
 		public bool IsTeacher { get; set; }
 
-		//[ForeignKey("StudentGroup_Id")]
-		//public StudentGroup StudentGroup { get; set; }
-		//public string StudentGroup_Id { get; set; }
+		[ForeignKey("StudentGroup_Id")]
+		public StudentGroup StudentGroup { get; set; }
+		public string StudentGroup_Id { get; set; }
 
 		public virtual ICollection<StudentGroup> StudentGroups { get; set; }
 
