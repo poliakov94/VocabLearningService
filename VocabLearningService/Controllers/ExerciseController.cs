@@ -9,7 +9,8 @@ using VocabLearningService.Models;
 
 namespace VocabLearningService.Controllers
 {
-    public class ExerciseController : TableController<Exercise>
+	[Authorize]
+	public class ExerciseController : TableController<Exercise>
     {
         protected override void Initialize(HttpControllerContext controllerContext)
         {

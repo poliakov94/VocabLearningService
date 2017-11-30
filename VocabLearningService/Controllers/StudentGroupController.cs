@@ -9,7 +9,8 @@ using VocabLearningService.Models;
 
 namespace VocabLearningService.Controllers
 {
-    public class StudentGroupController : TableController<StudentGroup>
+	[Authorize]
+	public class StudentGroupController : TableController<StudentGroup>
     {
         protected override void Initialize(HttpControllerContext controllerContext)
         {
