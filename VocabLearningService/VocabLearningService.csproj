@@ -164,6 +164,18 @@
     <Compile Include="Migrations\201711301429444_Initial.Designer.cs">
       <DependentUpon>201711301429444_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711301450550_FixRelationships.cs" />
+    <Compile Include="Migrations\201711301450550_FixRelationships.Designer.cs">
+      <DependentUpon>201711301450550_FixRelationships.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711301500047_TeacherGroup.cs" />
+    <Compile Include="Migrations\201711301500047_TeacherGroup.Designer.cs">
+      <DependentUpon>201711301500047_TeacherGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711301506138_Teacher.cs" />
+    <Compile Include="Migrations\201711301506138_Teacher.Designer.cs">
+      <DependentUpon>201711301506138_Teacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\VocabLearningContext.cs" />
     <Compile Include="Startup.cs" />
@@ -184,6 +196,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201711301429444_Initial.resx">
       <DependentUpon>201711301429444_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711301450550_FixRelationships.resx">
+      <DependentUpon>201711301450550_FixRelationships.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711301500047_TeacherGroup.resx">
+      <DependentUpon>201711301500047_TeacherGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711301506138_Teacher.resx">
+      <DependentUpon>201711301506138_Teacher.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
