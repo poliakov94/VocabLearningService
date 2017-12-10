@@ -16,5 +16,9 @@ namespace VocabLearningService.DataObjects
 		[ForeignKey("Exercise_Id")]
 		public Exercise Exercise { get; set; }
 		public string Exercise_Id { get; set; }
+
+		public string Type_Id { get; set; }
+
+		public bool Passed { get; set; }
 	}
 }
