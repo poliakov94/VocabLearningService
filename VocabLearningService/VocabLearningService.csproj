@@ -188,6 +188,10 @@
     <Compile Include="Migrations\201712101533269_Exercisetype.Designer.cs">
       <DependentUpon>201712101533269_Exercisetype.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712101948532_AssignmentAttempt.cs" />
+    <Compile Include="Migrations\201712101948532_AssignmentAttempt.Designer.cs">
+      <DependentUpon>201712101948532_AssignmentAttempt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\VocabLearningContext.cs" />
     <Compile Include="Startup.cs" />
@@ -226,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712101533269_Exercisetype.resx">
       <DependentUpon>201712101533269_Exercisetype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712101948532_AssignmentAttempt.resx">
+      <DependentUpon>201712101948532_AssignmentAttempt.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

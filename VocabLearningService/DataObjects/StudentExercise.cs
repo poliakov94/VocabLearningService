@@ -18,7 +18,7 @@ namespace VocabLearningService.DataObjects
 		public string Exercise_Id { get; set; }
 
 		public string Type_Id { get; set; }
-
 		public bool Passed { get; set; }
+		public int Attempt { get; set; }
 	}
 }
